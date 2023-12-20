@@ -1,0 +1,136 @@
+.popUpSection {
+  border: 3px solid var(--color-light-grey);
+  border-radius: 15px;
+  padding: 4.8rem;
+  box-shadow: 1.2rem 1.2rem 3.2rem #00000032;
+  position: fixed;
+  z-index: 25;
+  background: var(--color-background);
+  overflow-x: clip;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80rem;
+}
+
+.popUpCloseBtn {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  cursor: pointer;
+  display: block;
+  z-index: 30;
+}
+
+.popUpCloseBtn:hover {
+  color: red;
+}
+
+.popUpBlur {
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: block;
+  position: fixed;
+  background: #9194a1c4;
+}
+
+.popUpImage {
+  width: 35rem;
+  height: auto;
+}
+
+.popUpBody {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3.2rem;
+}
+
+.popUpHeader {
+  font-size: 2.8rem;
+  color: var(--color-dark-blue);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.popUpTextWrapper {
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.popUpText {
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+}
+
+.popUpImgWrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+  width: 40%;
+  height: 55%;
+  border-bottom-right-radius: 50%;
+  background: var(--color-light-purple);
+  z-index: -1;
+}
+
+@media (max-width: 46em) {
+  .popUpSection {
+    width: auto;
+    margin: 3.2rem;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .popUpBody {
+    grid-template-columns: 1fr;
+  }
+
+  .popUpImgWrapper {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .popUpImgWrapper::before {
+    content: "";
+    left: 0;
+    top: 14rem;
+    width: 60%;
+    height: 36%;
+  }
+
+  .popUpTextWrapper {
+    align-items: center;
+  }
+
+  .popUpText {
+    text-align: center;
+  }
+
+  .popUpCloseBtn {
+    top: 0;
+    right: 0;
+    padding: 2rem;
+  }
+  .popUpHeader {
+    text-align: center;
+  }
+}
+
+@media (max-width: 26em) {
+  .popUpSection {
+    padding: 4.8rem 3.2rem;
+  }
+  .popUpImage {
+    width: 26rem;
+  }
+
+  .popUpImgWrapper::before {
+    width: 70%;
+    height: 23%;
+  }
+}

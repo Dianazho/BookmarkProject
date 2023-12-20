@@ -1,0 +1,94 @@
+.emailInput {
+  padding: 1.4rem 1.6rem;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-background);
+  width: 280px;
+  background: var(--color-background);
+  display: flex;
+  height: fit-content;
+  font-family: inherit;
+  box-shadow: var(--button-shadow);
+}
+
+.inputDiv {
+  position: relative;
+}
+
+.emailInput:focus {
+  outline: none !important;
+  border: 2px solid var(--color-light-grey);
+  font-family: inherit;
+}
+
+.emailError {
+  padding: 1.4rem 1.6rem;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-light-red);
+  width: 280px;
+  background: var(--color-background);
+  display: flex;
+  height: fit-content;
+  z-index: 10;
+}
+
+.emailError:focus {
+  outline: none !important;
+  border: 2px solid var(--color-light-red);
+}
+
+.errorSign {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  z-index: 15;
+  right: -118px;
+  bottom: 34.5px;
+}
+
+.errorMessage {
+  width: 280px;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 400;
+  background: var(--color-light-red);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: 1.2rem 1.2rem 0.7rem;
+  font-style: italic;
+  top: 36px;
+  z-index: 5;
+  text-align: start;
+}
+
+.contactButton {
+  border: 2px solid var(--color-light-red);
+  background: var(--color-light-red);
+  border-radius: var(--border-radius);
+  padding: 1.4rem 3.2rem;
+  color: var(--color-background);
+  box-shadow: var(--shadow);
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  height: fit-content;
+  transition: var(--transition);
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+}
+
+.contactButton:hover,
+.contactButton:active {
+  background: var(--color-background);
+  color: var(--color-light-red);
+}
+
+@media (max-width: 59em) {
+  .emailForm {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 23em) {
+  .emailInput {
+    width: 260px;
+  }
+}

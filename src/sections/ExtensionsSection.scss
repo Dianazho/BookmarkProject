@@ -1,0 +1,21 @@
+.extensionsTextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 55rem;
+  text-align: center;
+  margin-top: 12.8rem;
+}
+
+@media (max-width: 61em) {
+  .cardsWrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 51em) {
+  .extensionsTextWrapper {
+    margin-top: 0rem;
+  }
+}

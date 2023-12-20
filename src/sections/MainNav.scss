@@ -1,0 +1,33 @@
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksList {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.linksList a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.linksList a:hover {
+  color: var(--color-light-red);
+  cursor: pointer;
+  transition: var(--transition);
+}

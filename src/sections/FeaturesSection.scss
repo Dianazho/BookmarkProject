@@ -1,0 +1,15 @@
+.featuresTextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 55rem;
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+@media (max-width: 64em) {
+  .featuresTextWrapper {
+    margin-top: 8rem;
+  }
+}

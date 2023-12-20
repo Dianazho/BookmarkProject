@@ -1,0 +1,20 @@
+.FAQTextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 55rem;
+  text-align: center;
+  width: 100%;
+  margin: 3.2rem 0 6.4rem;
+}
+
+.questionsList {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 2px solid var(--color-light-grey);
+  margin-bottom: 4.8rem;
+  max-width: 50rem;
+}

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+:root {
+  --color-dark-blue: #252b46;
+  --color-light-purple: #5368df;
+  --color-light-red: #fa5757;
+  --color-grey: #9194a1;
+  --color-light-grey: #ececec;
+  --color-background: #fff;
+  --margin-bottom-medium: 6.4rem;
+  --text-font-size: 18px;
+  --shadow: 1.2rem 1.2rem 3.2rem #9194a132;
+  --button-shadow: 0 0.4rem 1.2rem #9194a132;
+  --transition: all 0.3s;
+  --section-padding: 3.2rem 9.6rem 0;
+  --border-radius: 5px;
+  --max-width: 120rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--color-grey);
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: var(--color-background);
+  font-size: var(--text-font-size);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1.2rem;
+}
+
+.gap-2 {
+  gap: 1.6rem;
+}
+
+.gap-3 {
+  gap: 3.2rem;
+}
+
+.gap-4 {
+  gap: 4.8rem;
+}
+
+.gap-5 {
+  gap: 6.4rem;
+}
+
+.maxWidth {
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letterSpacing {
+  letter-spacing: 2px;
+}
+
+.fontSize {
+  font-size: 1.8rem;
+}
+
+.marginTop {
+  margin-top: 2.4rem;
+}
+
+.marginBottom {
+  margin-bottom: 4.8rem;
+}
+
+.marginBottomSmall {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 64em) {
+  .marginBottom {
+    margin-bottom: 3.2rem;
+  }
+}
+/* 
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
